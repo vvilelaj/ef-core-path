@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\vvilela\\source\\repos\\vvilelaj\\ef-core-path\\10.efc3.1-gs\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\vvilela\\source\\repos\\vvilelaj\\ef-core-path\\10.efc3.1-gs\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vvilela\\source\\repos\\vvilelaj\\ef-core-path\\10.efc3.1-gs\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj",
+        "projectName": "SamuraiApp.Data",
+        "projectPath": "C:\\Users\\vvilela\\source\\repos\\vvilelaj\\ef-core-path\\10.efc3.1-gs\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj",
+        "packagesPath": "C:\\Users\\vvilela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vvilela\\source\\repos\\vvilelaj\\ef-core-path\\10.efc3.1-gs\\SamuraiApp\\SamuraiApp.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vvilela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://smiledirectclub.myget.org/F/engineering/auth/8a11baed-3ec4-42fe-85a1-2f7173fce414/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
