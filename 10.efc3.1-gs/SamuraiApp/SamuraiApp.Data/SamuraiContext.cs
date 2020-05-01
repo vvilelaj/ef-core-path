@@ -14,5 +14,13 @@ namespace SamuraiApp.Data
             optionsBuilder.UseSqlServer("Data Source=127.0.0.1;Initial Catalog=ef-core;User Id=SA;Password=P2ssw0rdP2ssw0rd");
             base.OnConfiguring(optionsBuilder);
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // For many-to-many relationships   
+            modelBuilder
+                .Entity<SamuraiBattle>()
+                .HasKey(s => new { s.SamuraiId, s.BattleId });
+        }
     }
 }
