@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using SamuraiApp.Domain;
 
 namespace SamuraiApp.Data
@@ -9,9 +10,20 @@ namespace SamuraiApp.Data
         public DbSet<Quote> Quotes { get; set; }
         public DbSet<Clan> Clans { get; set; }
 
+        private static readonly ILoggerFactory loggerFactory = LoggerFactory.Create(builder =>
+        {
+            builder
+                .AddFilter((category, logLevel) =>
+                        category == DbLoggerCategory.Database.Command.Name
+                            && logLevel == LogLevel.Information)
+                .AddConsole();
+        });
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=127.0.0.1;Initial Catalog=ef-core;User Id=SA;Password=P2ssw0rdP2ssw0rd");
+            optionsBuilder
+                .UseLoggerFactory(loggerFactory)
+                .UseSqlServer("Data Source=127.0.0.1;Initial Catalog=ef-core;User Id=SA;Password=P2ssw0rdP2ssw0rd");
             base.OnConfiguring(optionsBuilder);
         }
 
