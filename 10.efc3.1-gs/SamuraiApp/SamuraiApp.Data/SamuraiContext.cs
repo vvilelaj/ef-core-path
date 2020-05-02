@@ -21,6 +21,11 @@ namespace SamuraiApp.Data
             modelBuilder
                 .Entity<SamuraiBattle>()
                 .HasKey(s => new { s.SamuraiId, s.BattleId });
+
+            // For controling the table name
+            modelBuilder
+                .Entity<Horse>()
+                .ToTable("Horses");
         }
     }
 }
